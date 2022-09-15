@@ -1,6 +1,6 @@
 pipeline {
 agent {
-label 'Build-server'
+label 'Build-Server'
 }
 
 stages {
