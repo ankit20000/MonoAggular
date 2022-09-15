@@ -19,7 +19,7 @@ stage ('Build')
 {
     steps
     {
-       sh "cd /home/ubuntu/workspace/MONOANGULARJOB ; sudo npm install " 
+       sh "cd /home/ubuntu/workspace/frontend ; sudo npm install " 
     }
 }
 
@@ -28,7 +28,7 @@ stage ('Deployment')
     {
     steps
     {
-        sh "cd /home/ubuntu/workspace/MONOANGULARJOB ; sudo npm start  " 
+        sh "cd /home/ubuntu/workspace/frontend; sudo pm2 start app.js  " 
     }
 }
   
